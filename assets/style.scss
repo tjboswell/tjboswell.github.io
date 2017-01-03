@@ -17,25 +17,25 @@ h1 {
     list-style-type: none;
     padding: 0;
     margin: 0;
-}
-
-#contact-info li {
-    font-size: .8em;
-    display: inline;
-    margin-right: 6px;
+    li {
+        font-size: .8em;
+        display: inline;
+        margin-right: 6px;
+    }
 }
 
 #footer-info {
     display: flex;
-}
-#footer-info div {
-    display: flex;
-    margin-right: 13px;
-    align-items: center;
-}
 
-#footer-info div img {
-    margin-right: 2px;
+    div {
+        display: flex;
+        margin-right: 13px;
+        align-items: center;
+
+        img {
+            margin-right: 2px;
+        }
+    }
 }
 
 .description {
@@ -44,17 +44,16 @@ h1 {
 }
 
 #resume {
-    /*padding: 2px;*/
     border: 1px solid #6AB7FF;
     background-color: white;
     transition: background 0.5s linear;
-}
-#resume:hover {
-    background-color: #6AB7FF;
-    border: 1px solid #6AB7FF;
-}
-#resume:hover a {
-    color: white;
+    &:hover {
+        background-color: #6AB7FF;
+        border: 1px solid #6AB7FF;
+        a {
+            color: white;
+        }
+    }
 }
 
 a {
@@ -62,14 +61,13 @@ a {
     font-weight: bold;
     text-decoration: none;
     transition: all .5s linear;
-}
 
-a:hover {
-    color: #414285;
+    &:hover {
+        color: #414285;
+    }
 }
 
 @media screen and (min-width: 0) and (max-width: 600px) {
-
     .description {
         width: 100%;
     }
