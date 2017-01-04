@@ -11,6 +11,10 @@ h1 {
     font-size: 1.5em;
     color: #6AB7FF;
     margin: 0;
+    transition: all .5s linear;
+    &:hover {
+        color: #414285;
+    }
 }
 
 #contact-info {
@@ -43,7 +47,7 @@ h1 {
     max-width: 500px;
 }
 
-#resume {
+button {
     border: 1px solid #6AB7FF;
     background-color: white;
     transition: background 0.5s linear;

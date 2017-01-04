@@ -8,7 +8,10 @@ h1 {
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 1.5em;
   color: #6AB7FF;
-  margin: 0; }
+  margin: 0;
+  transition: all .5s linear; }
+  h1:hover {
+    color: #414285; }
 
 #contact-info {
   list-style-type: none;
@@ -32,14 +35,14 @@ h1 {
   width: 40%;
   max-width: 500px; }
 
-#resume {
+button {
   border: 1px solid #6AB7FF;
   background-color: white;
   transition: background 0.5s linear; }
-  #resume:hover {
+  button:hover {
     background-color: #6AB7FF;
     border: 1px solid #6AB7FF; }
-    #resume:hover a {
+    button:hover a {
       color: white; }
 
 a {

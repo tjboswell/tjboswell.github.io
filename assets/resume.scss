@@ -1,0 +1,56 @@
+body {
+    margin: 0 auto;
+    max-width: 50%;
+}
+
+#resume {
+    margin-bottom: 20px;
+    span {
+        display: block;
+    }
+    h3, h4 {
+        display: inline;
+    }
+    h3, h4, h5 {
+        margin: 3px;
+    }
+    ul {
+        margin-top: 5px;
+        li span {
+            position: relative;
+            left: -10px;
+        }
+    }
+}
+
+.resume {
+    &-section {
+        h2 {
+            border-bottom: 1px solid black;
+            margin-bottom: 0;
+        }
+        p {
+            margin-top: 5px;
+        }
+    }
+    &-skills {
+        p {
+            margin: 2px;
+        }
+    }
+}
+
+@media screen and (min-width: 0) and (max-width: 600px) {
+    body {
+        max-width: 90%;
+    }
+}
+
+@media print {
+    body {
+        max-width: 90%;
+    }
+    #footer-info {
+        display: none;
+    }
+}
